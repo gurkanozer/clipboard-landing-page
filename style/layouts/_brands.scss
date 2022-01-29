@@ -1,0 +1,22 @@
+.brands{
+    margin-bottom: 7rem;
+    &__img{
+        margin-bottom: 6rem;
+        img{
+            max-height:4rem;
+            object-fit: cover;
+        }
+    }
+}
+@include mq($md-screen){
+    .brands{
+        margin-bottom: 5.8rem;
+        flex-direction: row;
+        justify-content: space-between;
+        &__img{
+            img{
+                max-height:6rem;
+            }
+        }
+    }
+}

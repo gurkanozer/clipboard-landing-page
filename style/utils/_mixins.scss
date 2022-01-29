@@ -1,0 +1,13 @@
+//MEDIA QUERIES
+@mixin mq($size, $to:true) {
+    @if $to {
+        @media screen and(min-width:$size) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and(max-width:$size) {
+            @content;
+        }
+    }
+}

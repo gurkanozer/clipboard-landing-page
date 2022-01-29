@@ -1,0 +1,30 @@
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 13rem;
+    &__img{
+        margin-bottom: 5rem;
+    }
+    
+}
+@include mq($md-screen){
+    .features{
+        flex-direction:row;
+        align-items: flex-start;
+        margin-bottom: 9rem;
+        &__list{
+            margin-top:8rem;
+            margin-left: -15rem;
+        }
+        &__img{
+            position: relative;
+            left: -27%;
+            margin-top: 1.6rem;
+            img{
+                width: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.track{
+    padding:0 3.3rem;
+    &__title{
+        margin-bottom: 1.6rem;
+    }
+    &__paragraph{
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+}
+
+@include mq($md-screen){
+    .track{
+        &__title{
+            margin-bottom:2rem;
+        }
+
+    }
+}

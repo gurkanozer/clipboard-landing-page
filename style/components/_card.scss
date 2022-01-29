@@ -1,0 +1,43 @@
+.card__container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mq($md-screen){
+        min-width:38rem;
+    }
+}
+.card{
+    width:100%;
+    max-width:38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    &--align-left{
+        @include mq($md-screen){
+            .card__title{
+                align-self: flex-start;
+            }
+            .card__paragraph{
+                text-align: left;
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 1.2rem;
+        align-self: center;
+    }
+    &__paragraph{
+        text-align: center;
+    }
+    &__img{
+        height:6.4rem;
+        margin-bottom: 2rem;
+        img{
+            object-fit: contain;
+        }
+    }
+}

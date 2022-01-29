@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap');
+//Utils
+@import './utils/variables';
+@import './utils/mixins';
+//Base
+@import 'base';
+//Components
+@import './components/container';
+@import './components/buttons';
+@import './components/card';
+//Layouts
+@import './layouts/hero';
+@import './layouts/track';
+@import './layouts/features';
+@import './layouts/accessibility';
+@import './layouts/tools';
+@import './layouts/brands';
+@import './layouts/download';
+@import './layouts/footer';

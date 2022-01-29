@@ -1,0 +1,19 @@
+.brands{
+    margin-bottom: 14rem;
+    @include mq($md-screen){
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 9.4rem;
+    }
+    &__img{
+        width:14rem;
+        &:not(:last-child){
+            margin-bottom: 6.4rem;
+        }
+        @include mq($md-screen){
+            width:auto;
+            height:4rem;
+        }
+    }
+}

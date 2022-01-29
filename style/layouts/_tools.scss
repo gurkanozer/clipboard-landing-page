@@ -1,0 +1,25 @@
+.tools{
+    padding:0 3.3rem;
+    margin-bottom: 10rem;
+    &__title{
+        margin-bottom:1.2rem;
+    }
+    &__paragraph{
+        text-align: center;
+        margin-bottom: 8.8rem;
+    }
+}
+
+
+@include mq($md-screen){
+    .tools{
+        margin-bottom: 12rem;
+        &__paragraph{
+            margin-bottom: 7rem;
+        }
+        &__list{
+            align-items: flex-start;
+            flex-direction: row;
+        }
+    }
+}
